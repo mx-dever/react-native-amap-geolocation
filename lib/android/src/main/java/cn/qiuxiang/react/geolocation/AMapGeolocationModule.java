@@ -6,7 +6,6 @@ import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.facebook.react.bridge.*;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("unused")
 public class AMapGeolocationModule extends ReactContextBaseJavaModule implements AMapLocationListener {
@@ -20,7 +19,6 @@ public class AMapGeolocationModule extends ReactContextBaseJavaModule implements
         this.reactContext = reactContext;
     }
 
-    @NotNull
     @Override
     public String getName() {
         return "AMapGeolocation";
